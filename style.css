@@ -1,0 +1,140 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode input,
+body.dark-mode button {
+  background-color: #333;
+  color: #f4f4f4;
+  border: 1px solid #555;
+}
+
+body.dark-mode .profile-card {
+  background-color: #2a2a2a;
+}
+
+/* Container */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Input & Buttons */
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Green Search Button */
+button:nth-of-type(1) {
+  background-color: #27ae60; /* green shade */
+  color: white;
+}
+
+button:nth-of-type(1):hover {
+  background-color: #219150;
+}
+
+/* Toggle Theme Button */
+.toggle-mode {
+  background-color: #555;
+  color: white;
+}
+
+.toggle-mode:hover {
+  background-color: #444;
+}
+
+/* Profile Card */
+.profile-card {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  margin-bottom: 10px;
+  color: #0b80f5;
+}
+
+.profile-card p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.profile-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.profile-card a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.profile-card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .profile-card {
+    font-size: 14px;
+  }
+}
